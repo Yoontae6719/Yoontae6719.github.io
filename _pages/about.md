@@ -21,9 +21,7 @@ nav: about
     </div>
     <div class="col-sm-6">
       <h6 class="mt-1 text-left text-sm-left" style="font-stretch: ultra-condensed;">
-        Berkeley Way West, Floor 7<br/>
-        1919 Shattuck Ave<br/>
-        Berkeley, CA, 94704
+        South Korea, KR
       </h6>
     </div>
   </div>
