@@ -97,14 +97,16 @@
 <h6><span>*</span> denotes equal contribution and joint lead authorship.</h6>
 
 
-<!-- Time-series -->
 <div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
+    <div class="col-sm-11 p-0">
+      <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
   <div class="col-sm-1 p-0 abbr">
         <a class="badge font-weight-bold danger-color-dark align-middle" style="width: 53px;" href="https://kdd2024.kdd.org/" target="_blank">
           KDD
         </a>
   </div>
   <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+    <div id="hwang2023identifying-header" class="col p-0">
       <h5 class="title mb-0">CAFO: Channe Attention Feature Orthogonalization for Explaining Multivariate Time Series</h5>
       <div class="author">
                   <nobr><a href="https://www.notion.so/unist-felab/Junpyo-Park-187b74eaaae847a98175664018bebea8" target="_blank">Jaeho Kim</a>,</nobr>
@@ -113,7 +115,6 @@
                   <nobr><a href="https://d3mlab.snu.ac.kr/members/principal-investigator" target="_blank">Junghye Lee</a>,</nobr>
             and
                   <nobr><a href="https://scholar.google.com/citations?hl=en&user=qhI7uVMAAAAJ" target="_blank">Seulki Lee</a>,</nobr>
-
       </div>
       <div>
         <p class="periodical font-italic">
@@ -124,9 +125,22 @@
             Acceptance Rate 20%
         </p>
       </div>
+      <div class="col p-0">
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#hwang2023identifying-abstract" role="button" aria-expanded="false" aria-controls="hwang2023identifying-abstract">Abstract</a>
+      </div>
+      <div class="col mt-2 p-0">
+        <div id="hwang2023identifying-abstract" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+            In multivariate time series (MTS) classification, finding the important features (e.g., sensors) for model performance is crucial yet challenging due to the complex, high-dimensional nature of MTS data, intricate temporal dynamics, and the necessity for domain-specific interpretations. Current explanation methods for MTS mostly focus on time-centric explanations, apt for pinpointing important time periods but less effective in identifying key features. This limitation underscores the pressing need for a feature-centric approach, a vital yet often overlooked perspective that complements time-centric analysis. To bridge this gap, our study introduces a novel feature-centric explanation and evaluation framework for MTS, named  CAFO (Channel Attention and Feature Orthgonalization). CAFO employs a convolution-based approach with channel attention mechanisms, incorporating a depth-wise separable channel attention module (DepCA) and a QR decomposition-based loss for promoting feature-wise orthogonality. We demonstrate that this orthogonalization enhances the separability of attention distributions, thereby refining and stabilizing the ranking of feature importance. This improvement in feature-wise ranking enhances our understanding of feature explainability in MTS. Furthermore, we develop metrics to evaluate global and class-specific feature importance. Our framework's efficacy is validated through extensive empirical analyses on two major public benchmarks and real-world datasets, both synthetic and self-collected, specifically designed to highlight class-wise discriminative features. The results confirm CAFO's robustness and informative capacity in assessing feature importance in MTS classification tasks. This study not only advances the understanding of feature-centric explanations in MTS but also sets a foundation for future explorations in feature-centric explanations. 
+          </div>
+        </div>
+      </div>
+      
   </div>
+</div> 
+          
+          
 
-  
 <!-- Investors -->
 <div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
   <div class="col-sm-1 p-0 abbr">
@@ -155,23 +169,23 @@
         </p>
       </div>
   </div>
-  
+    
+    
+<!-- Household -->
 <div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
-    <div class="col-sm-11 p-0">
-      <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
   <div class="col-sm-1 p-0 abbr">
         <a class="badge font-weight-bold danger-color-dark align-middle" style="width: 53px;" href="https://www.springer.com/journal/10479/" target="_blank">
           AOR
         </a>
   </div>
   <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-    <div id="hwang2023identifying-header" class="col p-0">
-      <h5 class="title mb-0">Identifying household finance heterogeneity via deep clustering.</h5>
+      <h5 class="title mb-0">Identifying household finance heterogeneity via deep clustering</h5>
       <div class="author">
                   <nobr><em>Yoontae Hwang</em>,</nobr>
                   <nobr><a href="https://scholar.google.co.kr/citations?user=dAMXPRcAAAAJ&hl=en" target="_blank">Yongjae Lee</a>,</nobr>
             and
                   <nobr><a href="https://scholar.google.com/citations?user=tqXS4IMAAAAJ&hl=en" target="_blank">Frank J. Fabozzi</a>,</nobr>
+
       </div>
       <div>
         <p class="periodical font-italic">
@@ -181,21 +195,22 @@
         <p class="periodical font-italic">
             Acceptance Rate 33.3%
         </p>
-      </div>
+        
       <div class="col p-0">
-          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#hwang2023identifying-abstract" role="button" aria-expanded="false" aria-controls="hwang2023identifying-abstract">Abstract</a>
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#hwang2023identify-abstract" role="button" aria-expanded="false" aria-controls="hwang2023household-abstract">Abstract</a>
       </div>
       <div class="col mt-2 p-0">
-        <div id="hwang2023identifying-abstract" class="collapse">
+        <div id="hwang2023identify-abstract" class="collapse">
           <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
             Households are becoming increasingly heterogeneous. While previous studies have revealed many important insights (e.g., wealth effect, income effect), they could only incorporate two or three variables at a time. However, in order to have a more detailed understanding of complex household heterogeneity, more variables should be considered simultaneously. In this study, we argue that advanced clustering techniques can be useful for investigating high-dimensional household heterogeneity. A deep learning-based clustering method is used to effectively handle the high-dimensional balance sheet data of approximately 50,000 households. The employment of appropriate dimension-reduction techniques is the key to incorporate the full joint distribution of high-dimensional data in the clustering step. Our study suggests that various variables should be used together to explain household heterogeneity. Asset variables are found to be crucial for understanding heterogeneity within wealthy households, while debt variables are more important for those households that are not wealthy. In addition, relationships with sociodemographic variables (e.g., age, education, and family size) were further analyzed. Although clusters are found only based on financial variables, they are shown to be closely related to most sociodemographic variables.
           </div>
         </div>
       </div>
-      
+        
+      </div>
   </div>
-</div> 
-
+    
+    
 
 <!-- Household -->
 <div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
@@ -238,6 +253,8 @@
         
       </div>
   </div>
+    
+    
 
 <!-- Simstock -->
 <div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
@@ -295,43 +312,39 @@
                   <nobr><a href="https://sites.google.com/view/dlim/home?authuser=0" target="_blank">Dong-Young Lim</a>,</nobr>
             and
                   <nobr><a href="https://scholar.google.co.kr/citations?user=dAMXPRcAAAAJ&hl=en" target="_blank">Yongjae Lee</a>,</nobr>
-
       </div>
       <div>
         <p class="periodical font-italic">
-            Financial Research Letters
+            Financial Research Letters 
             2023
         </p>
         <p class="periodical font-italic">
             Acceptance Rate 28%
         </p>
-      </div>
       <div class="col p-0">
-          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#hwang2023stoploss-abstract" role="button" aria-expanded="false" aria-controls="hwang2023stoploss-abstract">Abstract</a>
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#hwang2023stoloss-abstract" role="button" aria-expanded="false" aria-controls="hwang2023ICAIF-abstract">Abstract</a>
       </div>
       <div class="col mt-2 p-0">
-        <div id="hwang2023stoploss-abstract" class="collapse">
+        <div id="hwang2023stoloss-abstract" class="collapse">
           <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
             Since the rise of ML/AI, many researchers and practitioners have been trying to predict future stock price movements. In actual implementations, however, stop-loss is widely adopted to manage risks, which sells an asset if its price goes below a predetermined level. Hence, some buy signals from prediction models could be wasted if stop-loss is triggered. In this study, we propose a stop-loss adjusted labeling scheme to reduce the discrepancy between prediction and decision making. It can be easily incorporated to any ML/AI prediction models. Experimental results on U.S. futures and cryptocurrencies show that this simple tweak significantly reduces risk.
           </div>
         </div>
       </div>
-
+        
+      </div>
   </div>
 
-
-  
-  <div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
-    <div class="col-sm-11 p-0">
-      <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
+    
+<!-- Korea journal -->
+<div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
   <div class="col-sm-1 p-0 abbr">
         <a class="badge font-weight-bold danger-color-dark align-middle" style="width: 53px;" href="https://www.springer.com/journal/10479/" target="_blank">
-          KMFA
+          FRL
         </a>
   </div>
   <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-    <div id="hwang2019study" class="col p-0">
-      <h5 class="title mb-0">A Study on the Estimation of Apartment Price Index: Focused on the Machine Learning Algorithm.</h5>
+      <h5 class="title mb-0">A Study on the Estimation of Apartment Price Index: Focused on the Machine Learning Algorithm</h5>
       <div class="author">
                   <nobr><em>Yoontae Hwang</em>,</nobr>
       </div>
@@ -341,12 +354,21 @@
             2019
         </p>
         <p class="periodical font-italic">
-            Acceptance Rate 45.71%, Domestic journal
+            Acceptance Rate 45.71%, Domestic journal(South Korea)
         </p>
+      <div class="col p-0">
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#hwang2023ICAIF-abstract" role="button" aria-expanded="false" aria-controls="hwang2019KOREA-abstract">Abstract</a>
+      </div>
+      <div class="col mt-2 p-0">
+        <div id="hwang2019KOREA-abstract" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+          </div>
+        </div>
+      </div>
+        
       </div>
   </div>
-</div> 
-</div> 
+    
         
 <!-- Close div for publication -->
 
@@ -364,7 +386,7 @@
         </a>
   </div>
   <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-      <h5 class="title mb-0">STCC: Semi-Supervised Learning for Tabular Datasets with Continuous and Categorical Variables.</h5>
+      <h5 class="title mb-0">Geodesic Kernel flow for Semi- and Self-supervised learning on a Mixed-variable Tabular dataset</h5>
       <div class="author">
                   <nobr><em>Yoontae Hwang</em>,</nobr>
                   <nobr><a href="https://www.notion.so/unist-felab/Youngbin-Lee-339841e341f840d8808478df95e5dd97" target="_blank">Youngbin Lee</a>,</nobr>
@@ -375,7 +397,7 @@
       <div>
         <p class="periodical font-italic">
             Top AI conferences (coming soon) 
-            2023
+            2025
         </p>
         <p class="periodical font-italic">
             Acceptance Rate 20%
@@ -384,43 +406,33 @@
   </div>
 
 
-
-
-
-
-<!-- Future-Testing -->
+<!-- STCC -->
 <div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
   <div class="col-sm-1 p-0 abbr">
         <a class="badge font-weight-bold danger-color-dark align-middle" style="width: 53px;" href="https://www.springer.com/journal/10479/" target="_blank">
-          WIP
+          Submit
         </a>
   </div>
   <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-      <h5 class="title mb-0">Future Testing: Realistic asset path simulations for derivatives pricing</h5>
+      <h5 class="title mb-0">Temporal Representation Learning for Stock Similarities and Its Applications in Investment Management</h5>
       <div class="author">
                   <nobr><em>Yoontae Hwang</em>,</nobr>
-        and
+                  <nobr><a href="https://scholar.google.co.uk/citations?user=mtNQD-8AAAAJ&hl=en" target="_blank">Stefan Zohren</a>,</nobr>
+            and
                   <nobr><a href="https://scholar.google.co.kr/citations?user=dAMXPRcAAAAJ&hl=en" target="_blank">Yongjae Lee</a>,</nobr>
-      </div>
 
-  </div>
-</div>  
-<!-- Time-series2 -->
-<div class="row m-0 p-0" style="border-bottom: 1px solid #ddd;">
-  <div class="col-sm-1 p-0 abbr">
-        <a class="badge font-weight-bold danger-color-dark align-middle" style="width: 53px;" href="https://www.springer.com/journal/10479/" target="_blank">
-          WIP
-        </a>
-  </div>
-  <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
-      <h5 class="title mb-0">Rethinking and Improving Long-term Time Series Forecasting</h5>
-      <div class="author">
-                  <nobr><em>Yoontae Hwang</em>,</nobr>
-        and
-                  <nobr><a href="https://scholar.google.co.kr/citations?user=dAMXPRcAAAAJ&hl=en" target="_blank">Yongjae Lee</a>,</nobr>
       </div>
-
+      <div>
+        <p class="periodical font-italic">
+            Finance Journal (coming soon) 
+            2025
+        </p>
+        <p class="periodical font-italic">
+            Acceptance Rate 20%
+        </p>
+      </div>
   </div>
+
 
 </div>
 
