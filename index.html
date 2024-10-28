@@ -181,30 +181,30 @@ Recently, I was awarded the Sejong Science Fellowship by the National Research F
 
 <!-- Professional services -->
 <div class="professional-services mt-3 p-0">
-  <h3 class="title mb-3 p-0" style="font-size: 1.5rem;">Professional Services</h3>
+  <h3 class="title mb-3 p-0" style="font-size: 1.5rem; border-bottom: 2px solid #ddd; padding-bottom: 0.5rem;">Professional Services</h3>
 
-  <div class="service-item mb-3 p-2 border rounded">
-    <div class="row p-0">
-      <div class="col-sm-4 p-0">
-        <span class="badge badge-custom font-weight-bold text-uppercase align-middle date ml-2" style="display: inline-block; text-align: center;">
+  <div class="service-item mb-3 p-3 border rounded shadow-sm">
+    <div class="row align-items-center p-0">
+      <div class="col-sm-3 p-0 text-center">
+        <span class="badge badge-custom text-uppercase">
           Program Committee
         </span>
       </div>
-      <div class="col-sm-8 p-0 font-weight-light">
-        <h6 class="service-title" style="font-size: 1rem;"><a href="https://www.icaif2024.org" target="_blank">ICAIF 2024</a>, <a href="https://sites.google.com/view/aaai-2025-ai-si/home" target="_blank">AAAI-25 AI for Social Impact Workshop</a></h6>
+      <div class="col-sm-9 p-0 font-weight-light">
+        <h6 class="service-title m-0" style="font-size: 1rem;"><a href="https://www.icaif2024.org" target="_blank">ICAIF 2024</a>, <a href="https://sites.google.com/view/aaai-2025-ai-si/home" target="_blank">AAAI-25 AI for Social Impact Workshop</a></h6>
       </div>
     </div>
   </div>
 
-  <div class="service-item mb-3 p-2 border rounded">
-    <div class="row p-0">
-      <div class="col-sm-4 p-0">
-        <span class="badge badge-custom font-weight-bold text-uppercase align-middle date ml-2" style="display: inline-block; text-align: center;">
+  <div class="service-item mb-3 p-3 border rounded shadow-sm">
+    <div class="row align-items-center p-0">
+      <div class="col-sm-3 p-0 text-center">
+        <span class="badge badge-custom text-uppercase">
           Reviewer
         </span>
       </div>
-      <div class="col-sm-8 p-0 font-weight-light">
-        <h6 class="service-title" style="font-size: 1rem;"><a href="https://www.journals.elsevier.com/finance-research-letters" target="_blank">Finance Research Letters</a>, <a href="https://www.transactionsonml.com" target="_blank">TMLR</a></h6>
+      <div class="col-sm-9 p-0 font-weight-light">
+        <h6 class="service-title m-0" style="font-size: 1rem;"><a href="https://www.journals.elsevier.com/finance-research-letters" target="_blank">Finance Research Letters</a>, <a href="https://www.transactionsonml.com" target="_blank">TMLR</a></h6>
       </div>
     </div>
   </div>
@@ -216,12 +216,18 @@ Recently, I was awarded the Sejong Science Fellowship by the National Research F
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .service-item {
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 </style>
-
-
 
   
 </div>
