@@ -11,14 +11,14 @@
   <meta name="generator" content="Org Mode" />
 
   <style>
-    /* (1) #content는 가운데 위치시키되, 텍스트 정렬은 왼쪽으로 */
+    /* #content는 가로 폭을 고정하고 페이지 가운데에 배치, 텍스트는 기본 왼쪽 정렬 */
     #content {
       max-width: 60em;
-      margin: auto;       /* 수평 가운데 위치 */
-      text-align: left;   /* 기본 텍스트는 왼쪽 정렬 */
+      margin: auto;      /* 페이지 가운데에 위치 */
+      text-align: left;  /* 텍스트는 왼쪽 정렬 */
     }
 
-    /* (2) 타이틀만 별도로 가운데 정렬 */
+    /* 타이틀만 가운데 정렬 */
     .title  {
       text-align: center;
       margin-bottom: .2em;
@@ -30,8 +30,6 @@
       font-weight: bold;
       margin-top: 0;
     }
-
-    /* 이하 기본 스타일은 그대로 두시면 됩니다 */
     .todo   { font-family: monospace; color: red; }
     .done   { font-family: monospace; color: green; }
     .priority { font-family: monospace; color: orange; }
@@ -68,6 +66,7 @@
       background-color: #f2f2f299;
     }
     pre.src:hover:before { display: inline; margin-top: 14px; }
+
     table { border-collapse:collapse; }
     caption.t-above { caption-side: top; }
     caption.t-bottom { caption-side: bottom; }
@@ -134,15 +133,18 @@
 <body>
 <div id="content" class="content">
 
+  <!-- 타이틀만 가운데 정렬 -->
   <h1 class="title">Yoontae Hwang</h1>
+
+  <!-- 아래는 왼쪽 정렬 -->
   yoontae.hwang@eng.ox.ac.uk
   / <a href="https://github.com/Yoontae6719">Github</a>
   / <a href="https://scholar.google.co.kr/citations?user=sdbNclwAAAAJ&hl">Google Scholar</a>
   / <a href="https://www.linkedin.com/in/yoontae/">Linkdin</a>
 
   <p>
-    I received my Ph.D. in Industrial Engineering from Ulsan National Institute of Science and Technology (UNIST, Korea) on August 16, 2024. 
-    My dissertation, titled "Financial Representation Learning," was completed under the supervision of 
+    I received my Ph.D. in Industrial Engineering from Ulsan National Institute of Science and Technology (UNIST, Korea) on August 16, 2024.
+    My dissertation, titled "Financial Representation Learning," was completed under the supervision of
     <a href="https://scholar.google.co.kr/citations?user=dAMXPRcAAAAJ&hl=ko">Yongjae Lee</a>. During my doctoral studies,
     I published 6 papers in peer-reviewed journals and AI conferences.
     <br /><br />
@@ -151,9 +153,10 @@
     <a href="https://scholar.google.co.uk/citations?user=mtNQD-8AAAAJ&hl=en">Stefan Zohren</a>'s lab at the University of Oxford,
     where I've been focused on time-series analysis based on deep learning.
     <br /><br />
-    <strong>I am actively seeking academic positions starting from September 2025</strong>, with a focus on my research interests in Deep Learning,
-    Time-series analysis, Portfolio optimization and Asset management. In my future role, I hope to continue exploring
-    the intersection of AI and financial markets, with a particular emphasis on developing more robust predictive models.
+    <strong>I am actively seeking academic positions starting from September 2025</strong>,
+    with a focus on my research interests in Deep Learning, Time-series analysis, Portfolio optimization and Asset management.
+    In my future role, I hope to continue exploring the intersection of AI and financial markets,
+    with a particular emphasis on developing more robust predictive models.
   </p>
 
   <!-- Publications -->
@@ -162,11 +165,89 @@
     <div class="outline-text-2" id="text-orgPublications">
       <p><b>J</b>: Journal / <b>C</b>: Conference / <b>*</b>: equal contribution</p>
       <dl class="org-dl">
-        <dt>[C3] Geodesic Flow Kernels ...</dt>
-        <dd> ... </dd>
-        <dt>[C2] CAFO: ...</dt>
-        <dd> ... </dd>
-        <!-- ... 나머지 동일 ... -->
+        <dt>[C3] Geodesic Flow Kernels for Semi-Supervised Learning on Mixed-Variable Tabular Dataset</dt>
+        <dd>
+          <b><span class="underline">Yoontae Hwang</span></b>,
+          <a href="https://scholar.google.co.kr/citations?user=dAMXPRcAAAAJ&hl=ko">Yongjae Lee</a><br />
+          AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2024, Acceptance rate 24%<br />
+          [<a href="https://openreview.net/forum?id=3qHlPqzjM1">paper</a>]
+          [<a href="https://github.com/Yoontae6719/Geodesic-Flow-Kernels-for-Semi-Supervised-Learning-on-Mixed-Variable-Tabular-Dataset">code</a>]
+        </dd>
+
+        <dt>[C2] CAFO: Feature-Centric Explanation on Time Series Classification</dt>
+        <dd>
+          <a href="https://sites.google.com/view/jaeho-kim">Jaeho Kim</a>,
+          <a href="https://vaseline555.github.io/">Seok-ju Hanhn</a>,
+          <b><span class="underline">Yoontae Hwang</span></b>,
+          <a href="https://d3mlab.snu.ac.kr/members/principal-investigator">Junghye Lee</a>,
+          <a href="https://scholar.google.com/citations?hl=en&user=qhI7uVMAAAAJ">Seulki Lee</a><br />
+          ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<b>KDD</b>), 2024, Acceptance rate 20%<br />
+          <i>Best Poster Award, @UNIST AI Tech Workshop 2024</i><br />
+          [<a href="https://arxiv.org/abs/2406.01833">paper</a>]
+          [<a href="https://github.com/eai-lab/CAFO">code</a>]
+        </dd>
+
+        <dt>[C1] SimStock : Representation Model for Stock Similarities</dt>
+        <dd>
+          <b><span class="underline">Yoontae Hwang</span></b>,
+          <a href="https://www.notion.so/unist-felab/Junhyeong-Lee-f6429c27e45d44ad84222b5232f7d1cb">Junhyeong Lee</a>,
+          <a href="https://www.linkedin.com/in/daham-kim/">Daham Kim</a>,
+          Seunghwan Noh,
+          <a href="https://www.notion.so/unist-felab/Joohwan-Hong-Ph-D-a93266780e6a407a866e8b7ec7d47129">Joohwan Hong</a>
+          <a href="https://scholar.google.co.kr/citations?user=dAMXPRcAAAAJ&hl=ko">Yongjae Lee</a><br />
+          ACM International Conference on AI in Finance (<b>ICAF</b>), 2023, Acceptance rate 21%, <i>Oral presentation</i><br />
+          [<a href="https://dl.acm.org/doi/10.1145/3604237.3626888">paper</a>]
+          [<a href="https://github.com/Yoontae6719/SimStock-Representation-Model-for-Stock-Similarities">code</a>]
+        </dd>
+
+        <dt>[J5] Heterogeneous Trading Behaviors of Individual Investors</dt>
+        <dd>
+          <b><span class="underline">Yoontae Hwang</span></b>,
+          <a href="https://www.notion.so/unist-felab/Junpyo-Park-187b74eaaae847a98175664018bebea8">Junpyo Park</a>,
+          <a href="https://scholar.google.co.kr/citations?user=dAMXPRcAAAAJ&hl=ko">Yongjae Lee</a>,
+          <a href="https://scholar.google.com/citations?user=tqXS4IMAAAAJ&hl=en">Frank J Fabozzi</a><br />
+          Finance Research Letters (<b>FRL</b>), 2023, Acceptance rate 28%, <i>Q1 Quartile journal</i><br />
+          [<a href="https://www.sciencedirect.com/science/article/abs/pii/S1544612324005117">paper</a>]
+        </dd>
+
+        <dt>[J4] Identifying household finance heterogeneity via deep clustering</dt>
+        <dd>
+          <b><span class="underline">Yoontae Hwang</span></b>,
+          <a href="https://scholar.google.co.kr/citations?user=dAMXPRcAAAAJ&hl=ko">Yongjae Lee</a>,
+          <a href="https://scholar.google.com/citations?user=tqXS4IMAAAAJ&hl=en">Frank J Fabozzi</a><br />
+          Annals of Operations Research (<b>ANOR</b>), 2023, Acceptance rate 23%, <i>Q1 Quartile journal</i><br />
+          [<a href="https://link.springer.com/article/10.1007/s10479-022-04900-3">paper</a>]
+        </dd>
+
+        <dt>[J3] Household Financial Health: A Machine Learning Approach for Data-Driven Diagnosis and Prescription</dt>
+        <dd>
+          <a href="https://www.linkedin.com/in/kimkyle95/">Kyeongbin Kim*</a>,
+          <b><span class="underline">Yoontae Hwang*</span></b>,
+          <a href="https://www.linkedin.com/in/dongclim0613/">Dongcheol Lim</a>,
+          <a href="https://www.linkedin.com/in/sh-kim1026/">Suhyeon Kim</a>,
+          <a href="https://d3mlab.snu.ac.kr/members/principal-investigator">Junghye Lee</a>,
+          <a href="https://scholar.google.co.kr/citations?user=dAMXPRcAAAAJ&hl=ko">Yongjae Lee</a><br />
+          Quantitative Finance (<b>QF</b>), 2023, Acceptance rate 23%, <i>Q1 Quartile journal</i><br />
+          [<a href="https://www.tandfonline.com/doi/full/10.1080/14697688.2023.2254335">paper</a>]
+        </dd>
+
+        <dt>[J2] Stop-loss adjusted labels for machine learning-based trading of risky assets</dt>
+        <dd>
+          <b><span class="underline">Yoontae Hwang</span></b>,
+          <a href="https://www.notion.so/unist-felab/Junpyo-Park-187b74eaaae847a98175664018bebea8">Junpyo Park</a>,
+          <a href="https://sites.google.com/view/dlim/group?authuser=0">Dong-Young Lim</a>,
+          <a href="https://scholar.google.co.kr/citations?user=dAMXPRcAAAAJ&hl=ko">Yongjae Lee</a><br />
+          Finance Research Letters (<b>FRL</b>), 2023, Acceptance rate 28%, <i>Q1 Quartile journal</i><br />
+          [<a href="https://www.sciencedirect.com/science/article/abs/pii/S1544612323006578">paper</a>]
+          [<a href="https://github.com/Yoontae6719/Stop-loss-adjusted-labels">code</a>]
+        </dd>
+
+        <dt>[J1] A Study on the Estimation of Apartment Price Index: Focused on the Machine Learning Algorithm</dt>
+        <dd>
+          <b><span class="underline">Yoontae Hwang</span></b><br />
+          Journal of Money & Finance (<b>KMFA</b>), 2019, Acceptance rate 45.71%, Domestic journal (South Korea)<br />
+          [<a href="https://kiss.kstudy.com/Detail/Ar?key=3707638">paper</a>]
+        </dd>
       </dl>
     </div>
   </div>
@@ -176,7 +257,27 @@
     <h2 id="orgWorkingPaper">Working paper</h2>
     <div class="outline-text-2" id="text-orgWorkingPaper">
       <p><b>S</b>: Sumitted / <b>W</b>: Work in progress / <b>*</b>: equal contribution</p>
-      <!-- ... 이하 동일 ... -->
+      <dl class="org-dl">
+        <dt>[W] Decision-informed Neural Networks with Large Language Model Integration for Portfolio Optimization</dt>
+        <dd>
+          <b><span class="underline">Yoontae Hwang</span></b>,
+          <a href="https://scholar.google.com/citations?user=NWq7sGMAAAAJ&hl=en">Yaxuan Kong</a>
+          <a href="https://scholar.google.co.uk/citations?user=mtNQD-8AAAAJ&hl=en">Stefan Zohren</a>
+          <a href="https://scholar.google.co.kr/citations?user=dAMXPRcAAAAJ&hl=ko">Yongjae Lee</a><br />
+          Finance Journal, 2024.12, Acceptance rate 23%, <i>Q1 Quartile journal</i>
+        </dd>
+
+        <dt>[S] Temporal Representation Learning for Stock Similarities and Its Applications in Investment Management</dt>
+        <dd>
+          <b><span class="underline">Yoontae Hwang</span></b>,
+          <a href="https://scholar.google.co.uk/citations?user=mtNQD-8AAAAJ&hl=en">Stefan Zohren</a>
+          <a href="https://scholar.google.co.kr/citations?user=dAMXPRcAAAAJ&hl=ko">Yongjae Lee</a><br />
+          Finance Journal, 2024.12, Acceptance rate 23%, <i>Q1 Quartile journal</i><br />
+          <i>Best Paper Award @the Korean Academic Society of Business Administration 2024</i><br />
+          [<a href="https://arxiv.org/abs/2407.13751">paper</a>]
+          [<a href="https://github.com/Yoontae6719/SimStock-Representation-Model-for-Stock-Similarities">code</a>]
+        </dd>
+      </dl>
     </div>
   </div>
 
@@ -186,7 +287,7 @@
     <div class="outline-text-2" id="text-orgWorkExp">
       <dl class="org-dl">
         <dt>University of Oxford</dt>
-        <dd>Oxford, United Kingdom, 2024. 09- present <br />
+        <dd>Oxford, United Kingdom, 2024. 09 - present <br />
         Postdoctoral Researcher (Sejong Science Fellowship)</dd>
         <dt>Shinhan Investment Corp</dt>
         <dd>Seoul, South Korea, 2020. 12 - 2021. 05 <br />
@@ -265,6 +366,6 @@
     </div>
   </div>
 
-</div><!-- #content 닫힘 -->
+</div> <!-- #content 닫힘 -->
 </body>
 </html>
