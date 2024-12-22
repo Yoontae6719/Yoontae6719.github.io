@@ -25,7 +25,7 @@ a {
 
 .intro-container {
   display: flex;
-  flex-direction: row; /* 기본적으로 가로 배치 */
+  flex-direction: row; 
   align-items: flex-start;
   margin-bottom: 1em;
 }
@@ -33,21 +33,20 @@ a {
 .intro-img {
   margin-top: 2em;
   margin-right: 10px;
-  width: 325px;       /* 원본 가로 크기 */
-  height: auto;       /* 높이 자동 */
+  width: 325px;       
+  height: auto;     
 }
 
-/* 화면 너비가 600px 이하(모바일)일 때는 세로 배치로 변경 */
-@media (max-width: 600px) {
+@media (max-width: 150px) {
   .intro-container {
-    flex-direction: column; /* 세로 정렬 */
-    align-items: center;    /* 가운데 정렬(선택 사항) */
+    flex-direction: column; 
+    align-items: center;    
   }
 
   .intro-img {
     margin-right: 0;
-    margin-bottom: 1em; /* 텍스트와 간격 띄우기 */
+    margin-bottom: 1em;
     width: 100%;
-    max-width: 325px;   /* 너무 크게 확대되지 않도록 최대 폭 지정 */
+    max-width: 325px;
   }
 }
